@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="720.0" prefWidth="1280.0">
+         <children>
+            <Canvas fx:id="canvas" height="680.0" layoutY="37.0" width="1280.0" />
+            <Button fx:id="button_start" layoutX="1096.0" layoutY="8.0" mnemonicParsing="false" onAction="#start" text="Start" />
+            <ComboBox fx:id="comboBox" layoutX="5.0" layoutY="4.0" onMouseClicked="#configurate" prefWidth="150.0" promptText="&lt;Choose Pattern&gt;" />
+            <Label layoutX="772.0" layoutY="9.0" text="Width:" />
+            <TextField fx:id="text_field2" layoutX="826.0" layoutY="5.0" prefHeight="15.0" prefWidth="89.0" text="256" />
+            <Label layoutX="936.0" layoutY="10.0" text="Height:" />
+            <TextField fx:id="text_field3" layoutX="989.0" layoutY="8.0" prefHeight="25.0" prefWidth="85.0" text="144" />
+            <Button fx:id="button_stop" layoutX="1150.0" layoutY="8.0" mnemonicParsing="false" onAction="#stop" text="Stop/Resume" />
+            <Label layoutX="581.0" layoutY="11.0" text="Grain Amount:" />
+            <TextField fx:id="text_field4" layoutX="683.0" layoutY="7.0" prefHeight="15.0" prefWidth="65.0" text="4" />
+            <ChoiceBox fx:id="choiceBox" layoutX="161.0" layoutY="6.0" onMouseEntered="#configurate2" prefWidth="150.0" />
+            <Label layoutX="315.0" layoutY="11.0" text="Row:" />
+            <TextField fx:id="field_row" layoutX="353.0" layoutY="8.0" prefHeight="25.0" prefWidth="33.0" text="4" />
+            <TextField fx:id="field_column" layoutX="456.0" layoutY="8.0" prefHeight="25.0" prefWidth="39.0" text="4" />
+            <Label layoutX="405.0" layoutY="12.0" text="Column:" />
+            <Label layoutX="502.0" layoutY="12.0" text="Ray:" />
+            <TextField fx:id="field_ray" layoutX="532.0" layoutY="8.0" prefHeight="25.0" prefWidth="39.0" text="4" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
